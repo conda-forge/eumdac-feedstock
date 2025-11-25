@@ -1,13 +1,13 @@
 {% set name = "eumdac" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4f83308d39b39f1d2f660325665091cc398c0310dd85439ca3e9f5c4d2119853
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 162144e4d98036b56c369ea19b1f316c2a0c2c84fd818d9f7371fef67135a79c
 
 build:
   noarch: python
