@@ -34,9 +34,6 @@ requirements:
     - urllib3
     - paho-mqtt
 
-channels:
-  - conda-forge
-
 test:
   imports:
     - eumdac
