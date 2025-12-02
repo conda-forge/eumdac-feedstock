@@ -24,6 +24,7 @@ requirements:
     - requests >=2.5.0
     - pyyaml
     - urllib3 >=1.26, <2
+    - paho-mqtt
 
   run:
     - python >=3.7
@@ -31,6 +32,7 @@ requirements:
     - requests >=2.5.0
     - pyyaml
     - urllib3
+    - paho-mqtt
 
 test:
   imports:
