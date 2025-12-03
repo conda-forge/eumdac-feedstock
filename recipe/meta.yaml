@@ -13,7 +13,7 @@ build:
   noarch: python
   entry_points:
     - eumdac = eumdac.cli:cli
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install .
 
 requirements:
