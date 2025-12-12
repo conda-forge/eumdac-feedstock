@@ -13,13 +13,13 @@ build:
   noarch: python
   entry_points:
     - eumdac = eumdac.cli:cli
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install .
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - requests >=2.5.0
     - pyyaml
@@ -27,7 +27,7 @@ requirements:
     - paho-mqtt
 
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - setuptools
     - requests >=2.5.0
     - pyyaml
@@ -35,6 +35,8 @@ requirements:
     - paho-mqtt
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - eumdac
 
