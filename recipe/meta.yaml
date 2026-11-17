@@ -1,19 +1,19 @@
 {% set name = "eumdac" %}
-{% set version = "3.1.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 85359c42422815a0f2780bc988a95b3b7126f3ccdc98a9605d385b783044c2a7
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 77aabac979d879f8a14573555c36dfc58448d9a4bb5624aa33eb6b20d0bc38e6
 
 build:
   noarch: python
   entry_points:
     - eumdac = eumdac.cli:cli
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install .
 
 requirements:
